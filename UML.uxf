@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>40</x>
+      <y>20</y>
+      <w>210</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>Puzzle
+--
++int board[4][4]
+--
+swipe_left();
+swipe_right();
+swipe_top();
+swipe_low();
+addition();
+add_element_random();
+add_element();
+count_element();
+puzzle_end();
+puzzle_victory();</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>260</x>
+      <y>20</y>
+      <w>210</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Player
+--
+int lp
+--
+get_lp();
+lp_increase(int a);
+lp_decrease(int a);</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>260</x>
+      <y>130</y>
+      <w>210</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>MapLayer
+--
+m_chunkSize
+m_chunkCount
+m_globalBounds
+--
+getGlobalBounds()</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
