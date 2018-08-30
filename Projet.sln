@@ -9,6 +9,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestsUnitaires", "TestsUnit
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MaBibliotheque", "MaBibliotheque\MaBibliotheque.vcxproj", "{734F0D8D-36F3-472E-8412-3E0C555E3464}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0BC0C535-FEBB-4A83-8197-AF74FA26E100} = {0BC0C535-FEBB-4A83-8197-AF74FA26E100}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2048RPG", "2048RPG\2048RPG.vcxproj", "{6C23D1E5-BF11-4D4D-A719-431F424E5CA2}"
 EndProject

@@ -39,6 +39,7 @@ https://github.com/fallahn/xygine/blob/master/xygine/src/components/ComponentTil
 #include <tmxlite/Map.hpp>
 #include <tmxlite/TileLayer.hpp>
 
+
 #include <SFML/Graphics/Drawable.hpp>
 #include <SFML/Graphics/RenderStates.hpp>
 #include <SFML/Graphics/RenderTarget.hpp>
@@ -64,7 +65,6 @@ class MapLayer final : public sf::Drawable
 
 
 
-
 public:
 
 
@@ -81,7 +81,6 @@ public:
 
 			const auto& layer = *dynamic_cast<const tmx::TileLayer*>(layers[idx].get());
 			createChunks(map, layer);
-
 			auto mapSize = map.getBounds();
 			m_globalBounds.width = mapSize.width;
 			m_globalBounds.height = mapSize.height;

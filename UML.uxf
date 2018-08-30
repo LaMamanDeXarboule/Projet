@@ -28,16 +28,17 @@ puzzle_victory();</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>250</x>
-      <y>10</y>
+      <x>740</x>
+      <y>150</y>
       <w>210</w>
       <h>100</h>
     </coordinates>
-    <panel_attributes>Player
+    <panel_attributes>Fighter	
 --
 int lp
 --
 get_lp();
+getint_lp();
 lp_increase(int a);
 lp_decrease(int a);</panel_attributes>
     <additional_attributes/>
@@ -46,7 +47,7 @@ lp_decrease(int a);</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>250</x>
-      <y>120</y>
+      <y>10</y>
       <w>210</w>
       <h>240</h>
     </coordinates>
@@ -66,5 +67,109 @@ createChunks()
 operator=()
 updateVisibility()</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>640</x>
+      <y>10</y>
+      <w>210</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Character
+--
+int id	
+--
+get_id();</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>470</x>
+      <y>150</y>
+      <w>210</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Human
+--
+string name
+--
+get_name();</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>580</x>
+      <y>310</y>
+      <w>210</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Enemy
+--
+int loot
+--
+int get_loot()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>910</x>
+      <y>310</y>
+      <w>210</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Player
+--
+int win
+--
+void win_count();</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>560</x>
+      <y>100</y>
+      <w>200</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;180.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>730</x>
+      <y>100</y>
+      <w>140</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>120.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>680</x>
+      <y>240</y>
+      <w>180</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;160.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>830</x>
+      <y>240</y>
+      <w>200</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>180.0;70.0;10.0;10.0</additional_attributes>
   </element>
 </diagram>

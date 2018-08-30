@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<Voiceline> 
+		<Human id = "1" name = "Jean">
+			<data encoding="csv">
+			Bonjour, je m'appelle Jean
+			</data>
+		</Human>
+		<Human id = "2" name = "Pierre" text = "Bonjour, je m'appelle Pierre">
+			<data encoding="csv">
+			Bonjour, je m'appelle Pierre
+			</data>
+		</Human>
+		<Enemy id = "3" lp = "1"/>
+		<Enemy id = "4" lp = "2"/>
+		<Enemy id = "5" lp = "3"/>
+	</Voiceline>

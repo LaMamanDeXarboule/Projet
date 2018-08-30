@@ -2,12 +2,12 @@
 #include <string>
 #include "Fighter.hpp"
 
-class Player : public Fighter {
+class Enemy : public Fighter {
 
 public:
-	Player(int i);
-	void win_inc();
+	Enemy(int i);
+	int get_loot();
 
 private:
-	int win;
+	int loot;
 };
